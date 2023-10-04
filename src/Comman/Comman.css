@@ -1,0 +1,70 @@
+#header{
+    background-color: white;
+   font-family: 'Times New Roman', Times, serif;
+    color: black;
+    
+   .tabs{
+    font-weight: 400;
+    letter-spacing: .1rem;
+   cursor: pointer;
+   text-decoration: none;
+   }
+   .applink{
+    text-decoration: none;
+    background-color: #1f385a;
+    color: white;
+  display: flex;
+ justify-content: center;
+ padding: 0.5rem;
+   }
+}
+
+#Location{
+    white-space:pre-wrap;
+    line-height: 1.3rem;
+    
+    .locationAddresss{
+        font-size: 14px;
+    }
+    .greenAddress{
+        font-size: 12px;
+        color:rgb(15, 143, 15);
+        font-weight: 700;
+    }
+    
+      
+}
+
+
+#footer{
+    background-color: #1f385a;
+    color: white;
+text-align: left;
+padding: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+    .footerTitle{
+        font-size: 18px; 
+        margin-bottom: 0.5rem;
+      }
+  .footerInfo{
+    margin-bottom: 0.5rem;
+   
+  }
+ .link{
+    text-decoration: none;
+    color: aliceblue;
+ }
+  .footerIcons{
+    font-size: 32px; 
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+  .footerCopyRight{
+    font-size: 12px;
+    
+  }
+}
