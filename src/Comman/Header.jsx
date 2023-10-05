@@ -12,32 +12,17 @@ import MenuItem from '@mui/material/MenuItem';
 import AppleIcon from '@mui/icons-material/Apple';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import './Comman.css';
 
-const pages = ['Aartas CliniShare Delhi', 'Aartas CliniShare Gurgaon'];
+import './Comman.css';
 
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [anchorElUser, setAnchorElUser] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -46,32 +31,11 @@ const Header = () => {
     setAnchorEl(null);
   };
 
-  const renderMenuItems = (items, handleClose) => (
-    <Menu
-      anchorEl={items === pages ? anchorElNav : anchorElUser}
-      anchorOrigin={{
-        vertical: 'bottom',
-        horizontal: 'left',
-      }}
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'left',
-      }}
-      open={Boolean(items === pages ? anchorElNav : anchorElUser)}
-      onClose={handleClose}
-      sx={{
-        display: { xs: 'block', md: 'none' },
-      }}>
-      {items.map((item) => (
-        <MenuItem key={item} onClick={handleClose}>
-          {item}
-        </MenuItem>
-      ))}
-    </Menu>
-  );
+
+
 
   return (
-    <AppBar position='static' id='header'>
+    <AppBar position='fixed' id='header'> {/* Set position to 'fixed' */}
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <Typography
@@ -100,9 +64,8 @@ const Header = () => {
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}>
-              <MenuIcon />
+             
             </IconButton>
-            {renderMenuItems(pages, handleCloseNavMenu)}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -124,12 +87,11 @@ const Header = () => {
             </Typography>
 
             <Menu
-              //   id='demo-positioned-menu'
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
               onClose={handleClose}
               anchorOrigin={{
-                vertical: 'bottom', // Adjust this value to position the menu lower
+                vertical: 'bottom',
                 horizontal: 'left',
               }}
               transformOrigin={{
