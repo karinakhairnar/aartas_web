@@ -10,6 +10,8 @@ import HealthCare from './Slides/HealthCare';
 import ListofDocs from './Slides/ListofDocs';
 import AartasApp from './Slides/AartasApp';
 import CallRoundedIcon from '@mui/icons-material/CallRounded';
+import Clinic from './Slides/Clinic';
+import ClinicInterior from './Slides/ClinicInterior'
 
 export const Home = () => {
   return (
@@ -18,8 +20,10 @@ export const Home = () => {
       <Care />
       <Huminity />
       <Docter />
+      <Clinic/>
       <ListofDocs />
       <Mordern />
+      <ClinicInterior/>
       <Feedback />
       <AartasApp />
       <HealthCare />

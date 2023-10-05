@@ -69,7 +69,7 @@
 }
 
   #docter{
-    padding: 10rem;
+    padding: 6rem;
 
     .docTitle{
       font-family: 'Times New Roman', Times, serif;
@@ -159,6 +159,7 @@
   display: flex;
   gap: 1rem;
   overflow: hidden;
+  /* margin-top: 2rem; */
 }
 
 .profiles {
@@ -204,5 +205,65 @@
     .img{
       margin-top: 6rem;
     }
+  }
+}
+
+.Clinic {
+  background-image: url(../../assets/background.png);
+  background-repeat: no-repeat;
+background-size: contain;
+  height: 600px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  .clinicInfo{
+    display: flex;
+    color: white;
+    width: 50%;
+    margin: auto;
+justify-content: space-around;
+position: relative;
+top: 350px; 
+
+.info{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  font-weight: 800;
+}
+.clincbtn{
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+  color: black;
+  border-radius: 5rem;
+  font-size: 24px;
+  padding: 0.5rem;
+  border: none;
+}
+  }
+}
+
+.ClinicInterior{
+  background-image: url(../../assets/back-ground.png);
+  background-repeat: no-repeat;
+background-size: contain;
+  height: 800px;
+  margin: auto;
+  .clinictitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    font-weight: 800;
+    text-align: left;
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+    top: 300px;
+    line-height: 0.3rem;
+  }
+  .clinicsubtitle{
+    padding: 1.5rem;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 280px;
   }
 }

@@ -17,11 +17,10 @@ export const Loader = () => {
             component="a"
             
             sx={{
-              fontSize: '40px', 
-              
+              fontSize: '50px', 
               mr: 2,
               fontFamily: 'Times New Roman, serif',
-              fontWeight: 400,
+              fontWeight: 600,
               letterSpacing: '.2rem',
               color: 'black', 
               textDecoration: 'none',
